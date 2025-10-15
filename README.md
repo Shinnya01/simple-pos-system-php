@@ -24,14 +24,38 @@ You need a local environment that can run PHP and handle SQLite database files:
     ```
 2.  **Server Setup:**
     Place all project files into your web server's document root (e.g., `htdocs` or `www` folder).
-3.  **Database Initialization:**
-    This system uses **SQLite** (`database.sqlite`). The file **`setup_db.bat`** is provided to initialize the database structure (tables for products, sales, users, etc.).
-    * **Windows:** Simply double-click `setup_db.bat`.
-    * **Other OS:** You will need to inspect the contents of `setup_db.bat` and run the equivalent database setup commands using your PHP/SQLite CLI.
-4.  **Configuration:**
-    Review the **`.env`** and **`config.php`** files to adjust any system-wide settings, especially for security or paths.
-5.  **Access the System:**
-    Open your web browser and navigate to the project's URL (e.g., `http://localhost/index.php`). The first step is usually to **`login.php`**.
+
+### 🌐 Local Domain Setup (Optional)
+
+    To access your project using a clean URL like `http://myshop.local` instead of `http://localhost/project-folder/`, you need to edit your system's hosts file:
+
+1.  **Open Notepad as Administrator:**
+    * Search for "Notepad" in the Start Menu.
+    * Right-click and select "Run as administrator."
+
+2.  **Open the Hosts file:**
+    * In Notepad, go to **File > Open**.
+    * Navigate to this location:
+        ```
+        C:\Windows\System32\drivers\etc\hosts
+        ```
+    * (Make sure the file filter is set to "All Files" to see the `hosts` file.)
+
+3.  **Add the mapping:**
+    Add the following line to the bottom of the file:
+    ```
+    127.0.0.1    myshop.local
+    ```
+
+4.  **Save and Close:**
+    Save the `hosts` file and close Notepad.
+
+### 🗄 Database Initialization
+
+Initialize the SQLite database (`database.sqlite`) by running the setup script from your terminal:
+
+```bash
+.\setup_db.bat
 
 ---
 
