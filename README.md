@@ -19,7 +19,7 @@ You need a local server environment capable of running PHP and handling SQLite:
 
 1.  **Clone or Download:**
     ```bash
-    git clone [https://github.com/Shinnya01/simple-pos-system-php.git](https://github.com/Shinnya01/simple-pos-system-php.git)
+    git clone https://github.com/Shinnya01/simple-pos-system-php.git
     cd layout
     ```
 2.  **Server Setup:**
