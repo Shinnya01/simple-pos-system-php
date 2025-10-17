@@ -1,4 +1,4 @@
-<aside class="w-60 bg-white border-r border-gray-200 p-4 flex flex-col gap-2">
+<aside class="w-60 bg-white border-r border-gray-200 p-4 flex flex-col gap-2 h-screen">
   <a href="index.php?page=home" class="block px-3 py-2 rounded-lg hover:bg-blue-100 text-gray-700 font-medium">🏠 Dashboard</a>
   <a href="index.php?page=products" class="block px-3 py-2 rounded-lg hover:bg-blue-100 text-gray-700 font-medium">🛒 Products</a>
 
